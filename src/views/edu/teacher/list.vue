@@ -65,7 +65,9 @@
             </template>
         </el-table-column>
 
-        <el-table-column prop="intro" label="资历" />
+        <el-table-column prop="career" label="资历" />
+
+        <el-table-column prop="intro" label="简介" />
 
         <el-table-column prop="gmtCreate" label="添加时间" width="160"/>
         <!-- <el-table-column prop="gmtModified" label="更新时间" width="160"/> -->
@@ -99,7 +101,7 @@
 <script>
 //引入调用teacher.js文件
 
-import teacherApi from '@/api/teacher/teacher.js'
+import teacherApi from '@/api/edu/teacher.js'
 export default {
     
     //定义变量和初始值

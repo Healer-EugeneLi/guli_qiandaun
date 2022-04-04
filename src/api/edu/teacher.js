@@ -4,6 +4,16 @@ import request from '@/utils/request'
 
 export default{
 
+    //获取全部讲师
+    getAllTeacher(){
+        return request({
+
+            url:`/eduservice/teacher/findAll/`,
+            method:'get'
+        })
+
+    },
+
     //1.讲师列表
     getTeacherListPage(current,limit,teacherQuery){
 
